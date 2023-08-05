@@ -184,14 +184,14 @@ nav > a:hover {
     box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.1);
     width: 100%;
     margin-bottom: 32px;
-    transition: transform 500ms ease 0s;
+    transition: all 500ms ease 0s;
 }
 
-.service-detail-item:hover {
+.service-detail-item:is(:hover, :focus) {
     transform: scale(1.075);
 }
 
-.service-detail-item:hover img {
+.service-detail-item:is(:hover, :focus) img {
     filter: grayscale(0);
 }
 
