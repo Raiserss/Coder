@@ -175,17 +175,19 @@ nav > a:hover {
 
 .service-detail {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 128px;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 32px;
     margin-bottom: 72px;
 }
 
 .service-detail-item {
     box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin-bottom: 32px;
 }
 
 .service-detail-item:hover {
-    transform: scale(1.15);
+    transform: scale(1.075);
 }
 
 .service-detail-item:hover img {
@@ -198,12 +200,13 @@ nav > a:hover {
 }
 
 .service-detail-item h2 {
-    padding: 0 16px;
+    padding: 0 8px;
+    font-size: 24px;
 }
 
 .service-detail-item p {
-    font-size: 16px;
-    padding: 0 16px;
+    font-size: 14px;
+    padding: 0 8px;
 }
 
 #contact h1 {
@@ -306,17 +309,19 @@ form button:hover {
 }
 
 footer {
-    padding: 16px 128px;
+    padding: 16px 32px;
     background-color: #FFC108;
     color: white;
     display: flex;
-    justify-content: space-between;
+    justify-content: column;
     align-items: center;
+    text-align: center;
 }
 
 footer p {
     color: white;
-    width: 50%;
+    width: 100%;
+    margin-bottom: 16px;
 }
 
 .social-icon {
@@ -342,6 +347,16 @@ footer p {
 @media only screen and (max-width: 992px) {
     #header, #footer {
         padding: 16px 32px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .social-icon {
+        margin-top: 16px;
     }
 
     section {
@@ -383,5 +398,17 @@ footer p {
 
     .contact-detail form, .contact-detail > div {
         width: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .service-detail {
+        grid-template-columns: repeat(2, 1fr); /* Untuk layar lebih besar, dua kolom */
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .service-detail {
+        grid-template-columns: repeat(3, 1fr); /* Untuk layar lebih besar, tiga kolom */
     }
 }
