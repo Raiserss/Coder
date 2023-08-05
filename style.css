@@ -418,13 +418,18 @@ footer p {
     }
 
     .service-header a {
-        flex-direction: column;
-        align-items: center;
+        width: 100%;
+        padding: 7px;
         text-align: center;
+    }
+
+    .service-header p {
+        font-size: 20px;
     }
 
     .service-header h1 {
         margin-bottom: 16px;
+        font-size: 2em;
     }
 }
 
