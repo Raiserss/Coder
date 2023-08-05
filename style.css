@@ -401,6 +401,33 @@ footer p {
     }
 }
 
+@media only screen and (max-width: 768px) {
+    #header nav a {
+        margin: 0;
+        margin-top: 8px;
+        font-size: 18px;
+    }
+
+    #landing h1,
+    .service-header h1 {
+        font-size: 32px;
+    }
+    
+    #header h1 {
+        margin: 16px 0;
+    }
+
+    .service-header a {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .service-header h1 {
+        margin-bottom: 16px;
+    }
+}
+
 @media only screen and (min-width: 768px) {
     .service-detail {
         grid-template-columns: repeat(2, 1fr); /* Untuk layar lebih besar, dua kolom */
